@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MCP Tester</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MCP Server Tester</h1>
+    <form id="test-form">
+      <label>Installation Code:</label>
+      <input type="text" id="installation_code" required />
+
+      <label>API Key:</label>
+      <input type="text" id="api_key" required />
+
+      <label>Right Config (JSON):</label>
+      <textarea id="config">{}</textarea>
+
+      <label>Valid JSON Input:</label>
+      <textarea id="valid_json_input">{"state": "CA"}</textarea>
+
+      <button type="submit">Run Tests</button>
+    </form>
+
+    <div id="results">
+      <h2>Results:</h2>
+      <pre id="output"></pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
